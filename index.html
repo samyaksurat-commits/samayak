@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just Men | Premium Menswear Surat</title>
+    <style>
+        :root {
+            --primary: #1a1a1a;
+            --accent: #d4af37;
+            --text-light: #f4f4f4;
+            --text-dark: #333;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--text-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        header {
+            background: var(--primary);
+            color: white;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: var(--accent);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+        }
+
+        .hero {
+            height: 80vh;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1490578474895-699cd4e2cf59?auto=format&fit=crop&q=80&w=1471');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            max-width: 600px;
+        }
+
+        .cta-button {
+            background-color: var(--accent);
+            color: var(--primary);
+            padding: 15px 40px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: 0.3s;
+            text-transform: uppercase;
+        }
+
+        .cta-button:hover {
+            background-color: #b8962d;
+            transform: translateY(-3px);
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 50px 5%;
+            background: white;
+        }
+
+        .feature-card {
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #eee;
+        }
+
+        .feature-card h3 {
+            margin-bottom: 10px;
+            color: var(--accent);
+        }
+
+        .info-section {
+            padding: 50px 5%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            background: #f9f9f9;
+        }
+
+        .info-box {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .rating {
+            color: #f1c40f;
+            font-size: 1.2rem;
+        }
+
+        footer {
+            background: var(--primary);
+            color: #888;
+            padding: 40px 5% 20px;
+            text-align: center;
+        }
+
+        .social-links a {
+            color: var(--accent);
+            margin: 0 10px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">JUST MEN</div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Define Your Style</h1>
+    <p>Premium collection of Imported T-shirts, Jeans, and Shirts. Surat's top destination for professional men's fashion since 2019.</p>
+    <a href="contact.html" class="cta-button">Inquire Now</a>
+</section>
+
+<section class="features">
+    <div class="feature-card">
+        <h3>Premium Quality</h3>
+        <p>Curated selection of high-end imported garments and formal wear.</p>
+    </div>
+    <div class="feature-card">
+        <h3>Expert Staff</h3>
+        <p>Professional service to help you find the perfect fit and style.</p>
+    </div>
+    <div class="feature-card">
+        <h3>Top Rated</h3>
+        <p>Proudly rated 4.7/5 by our community of stylish men.</p>
+    </div>
+</section>
+
+<section class="info-section">
+    <div class="info-box">
+        <h2>Visit Our Store</h2>
+        <p><strong>Address:</strong> 49, opp. VILLA RIO, near Yamuna Chowk, Khodalchhaya society, Mota Varachha, Surat, Gujarat 394101</p>
+        <p><strong>Hours:</strong> Open daily until 10:00 PM</p>
+        <p><strong>Phone:</strong> 090161 68022</p>
+    </div>
+    <div class="info-box">
+        <h2>What Clients Say</h2>
+        <div class="rating">★★★★★ 4.7/5</div>
+        <p><em>"Best Quality and Service Provide. Staff are also professional."</em></p>
+    </div>
+</section>
+
+<footer>
+    <div class="social-links">
+        <a href="#">Instagram @justmen_surat</a> | 
+        <a href="#">Facebook</a>
+    </div>
+    <p style="margin-top:20px;">&copy; 2026 Just Men Surat. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
